@@ -1,1 +1,310 @@
+body {
+    background-color: black;
+    background-image: url(../images/background.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "MDIO0.5-Regular";
+    font-style: normal;
+    font-display: swap;
+    src: url("css/MDIO0.5-Regular.woff2") format('woff2');
+  }
+
+@font-face {
+    font-family: "MDNichrome-Ultra";
+    font-style: normal;
+    font-display: swap;
+    src: url("css/MDNichrome-Ultra.woff2") format('woff2');
+  }
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+#contentcontainer {
+    width: 100%;
+    display: block;
+    height: auto;
+    background-color: transparent;
+
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#logocontainer {
+    width: 100%;
+    max-width: 400pt;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140pt;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    background-color: transparent;
+    background-image: url(../images/watermark.svg);
+    width: 30%;
+    height: 140pt;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 65% auto;
+    float: left;
+    filter: drop-shadow(8px 1px 28px #000);
+
+}
+
+#logotext {
+    background-color: transparent;
+    box-sizing: border-box;
+    
+    display: block;
+    position: relative;
+    text-align: left;
+    float: right;
+    width: 66%;
+    height: 140pt;
+    background-image: url(../images/logo.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    filter: drop-shadow(8px 1px 28px #000);
+
+  }
+
+#headerimg {
+    width: 100%;
+    max-width: 400pt;
+    height: 600pt;
+    position: relative;
+    display: inline-block;
+    background-size: 100% auto;
+    background-image: url(../images/phones.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    top:-250pt;
+    margin-bottom: -275pt;
+    overflow: hidden;
+
+
+    text-align: center;
+    animation: float 4s infinite  ease-in-out;
+}
+
+#headerimg img {
+    display: inline-block;
+    
+}
+
+.buttoncontainer .buttonbg {
+    display: inline-block;
+    width: 90%;
+    max-width: 300pt;
+  
+    border-radius: 64pt;
+    position: relative;
+    vertical-align: middle;
+    top: 00pt;
+    z-index: 2;
+    box-sizing: border-box;
+    margin-bottom: 22pt;
+}
+
+.buttoncontainer .buttonbg .ctaButton {
+    width: 100%;
+
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    border-radius: 40pt;
+
+    font-size: 28pt;
+    background: linear-gradient(308.56deg, #C3DAEE 6.65%, #EBEBEB 40.84%, #EAF3FA 77.26%, #DF86E1 113.53%, #E186A7 125.5%), #EBEBEB;
+    filter: drop-shadow(8px 1px 28px #000);
+
+
+    z-index: 1;
+    position: relative;
+    top: -6pt;
+    left: -3pt;
+
+}
+
+.ctaButton img {
+    height: 100%;
+    max-width: 300pt;
+    padding-top:7pt;
+}
+
+
+.buttoncontainer .ctaButton:hover {
+    cursor: pointer;
+    background-color: #6C26FF;
+
+}
+
+.buttoncontainer {
+    width: 100%;
+    margin-top: 0pt;
+    text-align: center;
+}
+
+
+.filmButtonContainerL {
+    position: relative;
+    box-sizing: border-box;
+    top: 80pt;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 80pt;
+    text-align: right;
+    padding-right: 5pt;
+}
+
+.filmButtonContainerR {
+    box-sizing: border-box;
+    position: relative;
+    top: 80pt;
+    padding-left: 3%;
+    padding-top: 39pt;
+    display: block;
+    float: right;
+    width: 70%;
+    height: 80pt;
+    text-align: left;
+    
+}
+
+.filmButtons {
+    width: 100%;
+    max-width: 450pt;
+    margin-left: auto;
+    margin-top: -80pt;
+    margin-right: auto;
+    height: 350pt;
+    position: relative;
+    text-align: center;
+}
+
+.filmButtonContainerR a {
+    color: #ebebeb;
+    text-decoration: none;
+    border: none;
+    font-size: 15pt;
+    display: inline-block;
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    letter-spacing: -0.1pt;
+    margin: 0;
+    line-height: 14pt;
+    vertical-align: middle;
+    filter: drop-shadow(8px 1px 28px #000);
+
+}
+
+.filmButtonContainerR a:hover {
+    border-bottom: 1pt white solid;
+}
+
+.filmButton {
+    width: 66pt;
+    height: 66pt;
+    margin-top: 14pt;
+    position: relative;
+    display: inline-block;
+    border-radius: 100pt;
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color  0.3s cubic-bezier(.37,.02,.13,1);
+}
+
+.guidelines {
+    background-color: rgba(235,235,235,0.1)
+}
+
+.terms {
+    background-color: rgba(235,235,235,0.1)
+}
+
+.privacy {
+    background-color: rgba(235,235,235,0.1)
+}
+
+.filmButton:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+    transition: background-color 0.3s cubic-bezier(.37,.02,.13,1);
+}
+
+.footer {
+    border-radius: 30px 30px 0px 0px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 80pt;
+    display: block;
+    
+    font-family: 'JetBrains Mono', monospace;
+    background: #000000;
+}
+
+.footer .socials {
+    width: 50%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 20pt;
+    padding-left: 13pt;
+    text-align: left;
+}
+
+.footer .links {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 20pt;
+  
+    height: fit-content;
+    float: right;
+    text-align: right;
+    font-size: 15pt;
+}
+
+.footer .links a {
+    text-decoration: none;
+    color: #ebebeb;
+    padding-right: 8pt;
+    line-height: 80pt;
+    border: 0;
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+
+.footer img {
+    height: 30pt;
+    width: 30pt;
+    padding-top: 3pt;
+}
+
+
+
 
