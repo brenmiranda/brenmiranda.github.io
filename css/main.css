@@ -1,6 +1,10 @@
-@font-face { font-family: "MD Nichrome-Ultra"; font-style: normal; font-weight: 400; src: 
-	url("css/MDNichrome-Ultra.woff2"); } 
 @import url("https://fonts.googleapis.com/css?family=Inter:500"); 
+
+@font-face { 
+	font-family: "MD Nichrome-Ultra"; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url("css/MDNichrome-Ultra.woff2"); } 
 
 /* Variables */ 
 :root { 
