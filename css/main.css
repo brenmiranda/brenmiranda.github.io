@@ -23,9 +23,25 @@ width: 1200px;
 	visibility: hidden; 
 } 
 
-.mult.bp1-animate-enter3 { 
-	animation: bp1-animate-enter3-frames 0.2s ease-in-out 0s 1 normal forwards; 
+
+.header { 
+	cursor: pointer; 
+	display: block; 
+	height: 70px; 
+	margin-top: 2px; 
 	opacity: 0; 
+	position: relative; 
+	transition: all 0.2s ease; 
+	width: 1000px; }
+
+.header.bp1-animate-enter1 { 
+	animation: bp1-animate-enter1-frames 0.2s ease-in-out 0s 1 normal forwards; 
+	display: block; 
+	opacity: 0; 
+} 
+
+.header:hover { 
+	opacity: 1; 
 } 
 
 .mult { 
@@ -36,26 +52,9 @@ width: 1200px;
 	width: 1000px; 
 } 
 
-.tc { 
-	align-items: center; 
-	background-color: var(--white); 
-	border-radius: 20px; 
-	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
-	display: flex; 
-	flex-direction: column; 
-	justify-content: center; 
-	left: 340px; 
-	overflow: hidden; 
-	position: absolute; 
-	top: 0; 
-	width: 320px; 
-} 
-
-.miladatingu46com .link-2 { 
-	align-items: center; 
-	display: flex; 
-	justify-content: center; 
-	position: relative; 
+.mult.bp1-animate-enter3 { 
+	animation: bp1-animate-enter3-frames 0.2s ease-in-out 0s 1 normal forwards; 
+	opacity: 0; 
 } 
 
 .link { 
@@ -71,91 +70,6 @@ width: 1200px;
 	display: flex; 
 	flex-direction: column; 
 	justify-content: center; 
-} 
-
-.heading-3 { 
-	cursor: pointer; 
-	letter-spacing: 0; 
-	line-height: 28px; 
-	margin-top: -1px; 
-	position: relative; 
-	text-align: center; 
-	text-decoration: underline; 
-	white-space: nowrap; 
-	width: fit-content; 
-} 
-
-.pr { 
-	align-items: center; 
-	background-color: var(--white); 
-	border-radius: 20px; 
-	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
-	display: flex; 
-	flex-direction: column; 
-	justify-content: center; 
-	left: 680px; 
-	overflow: hidden; 
-	position: absolute; 
-	top: 0; width: 320px; 
-} 
-
-.cg { 
-	align-items: center; 
-	background-color: var(--white); 
-	border-radius: 20px; 
-	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
-	display: flex; 
-	flex-direction: column; 
-	justify-content: center; 
-	left: 0; 
-	overflow: hidden; 
-	position: absolute; 
-	top: 0; 
-	width: 320px; 
-} 
-
-.footer.bp1-animate-enter { 
-	animation: bp1-animate-enter-frames 0.2s ease-in-out 0s 1 normal forwards; 
-	display: block; 
-	opacity: 0; 
-} 
-
-.footer { 
-	background-color: transparent; 
-	display: block; 
-	flex-shrink: 1; 
-	height: 59px; 
-	margin-left: 0.22px; 
-	margin-top: 30px; 
-	opacity: 0; 
-	position: relative; 
-	width: 127px; 
-} 
-
-.dispo { 
-	height: 34px; 
-	left: 68px; 
-	position: absolute; 
-	top: 0;
-	width: 34px; 
-} 
-
-.mail { 
-	height: 34px; 
-	left: 24px; 
-	position: absolute; 
-	top: 0; 
-	width: 34px;
-} 
-
-.copyright { 
-	height: 17px; 
-	left: 0; 
-	letter-spacing: 0; 
-	line-height: 16.5px; 
-	position: absolute; 
-	top: 41px; 
-	white-space: nowrap; 
 } 
 
 .primary.bp1-animate-enter2 { 
@@ -224,6 +138,16 @@ width: 1200px;
 	width: 353px; 
 } 
 
+.flirt-better-match-more { 
+	height: 90px; 
+	letter-spacing: 0; 
+	line-height: 45px; 
+	margin-left: 12.96px; 
+	margin-top: 2px; 
+	min-width: 234px; 
+	position: relative; 
+} 
+
 .im-mila-your-perso { 
 	align-self: center;
 	height: 40px;
@@ -232,16 +156,6 @@ width: 1200px;
 	margin-right: 27.7px;
 	margin-top: 19px;
 	min-width: 290px;
-	position: relative; 
-} 
-
-.flirt-better-match-more { 
-	height: 90px; 
-	letter-spacing: 0; 
-	line-height: 45px; 
-	margin-left: 12.96px; 
-	margin-top: 2px; 
-	min-width: 234px; 
 	position: relative; 
 } 
 
@@ -272,27 +186,114 @@ width: 1200px;
 	text-decoration: underline;
 	white-space: nowrap;
 	width: fit-content; 
+}
+
+.miladatingu46com .link-2 { 
+	align-items: center; 
+	display: flex; 
+	justify-content: center; 
+	position: relative; 
 } 
 
-.header:hover { 
-	opacity: 1; 
+.cg { 
+	align-items: center; 
+	background-color: var(--white); 
+	border-radius: 20px; 
+	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	left: 0; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 0; 
+	width: 320px; 
 } 
 
-.header.bp1-animate-enter1 { 
-	animation: bp1-animate-enter1-frames 0.2s ease-in-out 0s 1 normal forwards; 
+.pr { 
+	align-items: center; 
+	background-color: var(--white); 
+	border-radius: 20px; 
+	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	left: 680px; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 0; width: 320px; 
+} 
+
+.tc { 
+	align-items: center; 
+	background-color: var(--white); 
+	border-radius: 20px; 
+	box-shadow: 0px 20px 60px -2.5px #0000000d, 0px 6.38px 19.15px -1.88px #0000000d, 0px 2.41px 7.24px -1.25px #0000000d, 0px 0.8px 2.39px -0.62px #0000000d; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	left: 340px; 
+	overflow: hidden; 
+	position: absolute; 
+	top: 0; 
+	width: 320px; 
+} 
+
+.heading-3 { 
+	cursor: pointer; 
+	letter-spacing: 0; 
+	line-height: 28px; 
+	margin-top: -1px; 
+	position: relative; 
+	text-align: center; 
+	text-decoration: underline; 
+	white-space: nowrap; 
+	width: fit-content; 
+} 
+
+.footer.bp1-animate-enter { 
+	animation: bp1-animate-enter-frames 0.2s ease-in-out 0s 1 normal forwards; 
 	display: block; 
 	opacity: 0; 
 } 
 
-.header { 
-	cursor: pointer; 
+.footer { 
+	background-color: transparent; 
 	display: block; 
-	height: 70px; 
-	margin-top: 2px; 
+	flex-shrink: 1; 
+	height: 59px; 
+	margin-left: 0.22px; 
+	margin-top: 30px; 
 	opacity: 0; 
 	position: relative; 
-	transition: all 0.2s ease; 
-	width: 1000px; }
+	width: 127px; 
+} 
+
+.mail { 
+	height: 34px; 
+	left: 24px; 
+	position: absolute; 
+	top: 0; 
+	width: 34px;
+} 
+
+.dispo { 
+	height: 34px; 
+	left: 68px; 
+	position: absolute; 
+	top: 0;
+	width: 34px; 
+} 
+
+.copyright { 
+	height: 17px; 
+	left: 0; 
+	letter-spacing: 0; 
+	line-height: 16.5px; 
+	position: absolute; 
+	top: 41px; 
+	white-space: nowrap; 
+} 
 
 /* screen - mob */
 
