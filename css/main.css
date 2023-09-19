@@ -1,1 +1,480 @@
+/* Variables */ 
+:root { 
+	--black: rgba(0, 0, 0, 1); 
+	--jaguar: rgba(0, 2, 19, 1); 
+	--blueberry: rgba(78, 106, 255, 0.251); 
+	--blueberry-2: rgba(78, 106, 255, 1); 
+	--cararra-2: rgba(235, 235, 235, 0.749); 
+	--cararra: rgba(235, 235, 235, 1); 
+	--white: rgba(255, 255, 255, 1); 
+	--font-size-s: 11px; 
+	--font-size-m: 16.2px; 
+	--font-size-l: 20px; 
+	--font-size-xl: 24px; 
+	--font-size-xxl: 45px; 
+	--font-family-inter: "Inter"; 
+	--font-family-md_nichrome-ultra: "MD Nichrome-Ultra"; 
+} 
 
+/* Classes */ 
+.mdnichrome-ultra-normal-jaguar-20px { 
+	color: rgba(0, 0, 0, 1); 
+	font-family: var(--font-family-md_nichrome-ultra); 
+	font-size: 20px;
+	font-weight: 400; 
+	font-style: normal; 
+} 
+
+.mdnichrome-ultra-normal-cararra-24px { 
+	color: rgba(235, 235, 235, 1); 
+	font-family: var(--font-family-md_nichrome-ultra); 
+	font-size: 24px;
+	font-weight: 400; 
+	font-style: normal; 
+} 
+
+.inter-medium-cararra-16-2px { 
+	color: rgba(235, 235, 235, 0.749); 
+	font-family: var(--font-family-inter); 
+	font-size: 16.2px; 
+	font-weight: 500; 
+	font-style: normal; 
+} 
+
+.mdnichrome-ultra-normal-cararra-45px { 
+	color: rgba(235, 235, 235, 1); 
+	font-family: var(--font-family-md_nichrome-ultra); 
+	font-size: 45px; 
+	font-weight: 400; 
+	font-style: normal; 
+} 
+
+.inter-medium-cararra-11px { 
+	color: rgba(235, 235, 235, 0.749); 
+	font-family: var(--font-family-inter); 
+	font-size: 11px; 
+	font-weight: 500; 
+	font-style: normal; 
+}
+
+@import url("https://fonts.googleapis.com/css?family=Inter:500"); 
+
+@font-face { 
+	font-family: "MD Nichrome-Ultra"; 
+	font-style: normal; 
+	font-weight: 400; 
+	src: url("css/MDNichrome-Ultra.woff2"); } 
+
+.desktop {
+  box-sizing: border-box;
+  width: 1200px;
+  height: min-content; /* 894px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 30px 0px 30px;
+  background-color: #000213;
+  overflow: hidden;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: absolute;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.nav {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 1000px;
+  height: min-content; /* 70px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 50px 30px 50px;
+  max-width: 100%;
+  z-index: 1;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 24;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.main {
+  flex-shrink: 0;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.columns {
+  flex-shrink: 0;
+  width: min-content; /* 728px */
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 100;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.columns {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 275px;
+  height: 549px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0px 0.6021873017743928px 3.010936508871964px -0.3333333333333333px rgba(0, 0, 0, 0.02), 0px 2.288533303243457px 11.442666516217285px -0.6666666666666666px rgba(0, 0, 0, 0.03373), 0px 10px 50px -1px rgba(0, 0, 0, 0.08);
+  background-color: rgba(78, 106, 255, 0.25);
+  overflow: visible;
+  transform: rotate(-3deg);
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 60px;
+}
+
+.frame {
+  flex-shrink: 0;
+  flex: 1 0 0px;
+  width: 1px;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-image: url(/* your-answers-indicate-1.png */);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 40px;
+}
+
+.rows {
+  flex-shrink: 0;
+  width: 353px;
+  height: min-content; /* 239px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: visible;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 20;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.flirt-better-match-more_ {
+  flex-shrink: 0;
+  width: auto; /* 259px */
+  height: auto; /* 90px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  font-family: "MD Nichrome Ultra", sans-serif;
+  color: #ebebeb;
+  font-size: 50px;
+  letter-spacing: 0px;
+  line-height: 0.9;
+  text-align: left;
+}
+
+.meet-mila-your-personal-matchmaker-use-her-to-find-your-next-person_ {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto; /* 50px */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 400px;
+  overflow: visible;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: rgba(235, 235, 235, 0.75);
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.columns {
+  flex-shrink: 0;
+  width: 353px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+
+import AppStore from "https://framer.com/m/App-Store-PXKL.js@2hDoQjj3To9GUsjKcoJX"
+
+.blog {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  height: min-content; /* 133px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 40px 30px 40px;
+  overflow: visible;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 60;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.wrap {
+  flex-shrink: 0;
+  width: 1000px;
+  height: min-content; /* 68px */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: visible;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.card {
+  flex-shrink: 0;
+  width: 320px;
+  height: min-content; /* 68px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0.7961918735236395px 2.3885756205709185px -0.625px rgba(0, 0, 0, 0.05), 0px 2.414506143104518px 7.2435184293135535px -1.25px rgba(0, 0, 0, 0.05), 0px 6.382653521484461px 19.147960564453385px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  min-width: 100px;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  border-radius: 20px;
+}
+
+import Button from "https://framer.com/m/Button-oVa2.js@v4uIJxxD5TFZGCwy90Md"
+
+.card {
+  flex-shrink: 0;
+  width: 320px;
+  height: min-content; /* 68px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0.7961918735236395px 2.3885756205709185px -0.625px rgba(0, 0, 0, 0.05), 0px 2.414506143104518px 7.2435184293135535px -1.25px rgba(0, 0, 0, 0.05), 0px 6.382653521484461px 19.147960564453385px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  min-width: 100px;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  border-radius: 20px;
+}
+
+import Button from "https://framer.com/m/Button-qpay.js@U03r9StbyX09MvNbT3qJ"
+
+.card {
+  flex-shrink: 0;
+  width: 320px;
+  height: min-content; /* 68px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0.7961918735236395px 2.3885756205709185px -0.625px rgba(0, 0, 0, 0.05), 0px 2.414506143104518px 7.2435184293135535px -1.25px rgba(0, 0, 0, 0.05), 0px 6.382653521484461px 19.147960564453385px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  min-width: 100px;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  border-radius: 20px;
+}
+
+import Button from "https://framer.com/m/Button-NJbN.js@IF4zdg4nrZ2gx2qhIqO0"
+
+.footer {
+  box-sizing: border-box;
+  width: 1200px;
+  height: min-content; /* 94px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 40px 30px 60px;
+  overflow: visible;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 60;
+  position: absolute;
+  border-radius: 0px 0px 0px 0px;
+  border-color: rgba(0, 0, 0, 0.05);
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.copyright {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  height: min-content; /* 64px */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px 0px 0px;
+  max-width: 1000px;
+  overflow: visible;
+  position: relative;
+  align-content: center;
+  flex-wrap: nowrap;
+  border-radius: 0px 0px 0px 0px;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+._all-summer-long-inc_ {
+  flex-shrink: 0;
+  width: auto; /* 162px */
+  height: auto; /* 21px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: var(--token-ba0f8505-1870-43c0-8d4e-7d4bc5406462, #999999);
+  font-size: 14px;
+  letter-spacing: 0em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.columns {
+  flex-shrink: 0;
+  width: 343px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.terms {
+  flex-shrink: 0;
+  width: auto; /* 42px */
+  height: auto; /* 21px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: var(--token-ba0f8505-1870-43c0-8d4e-7d4bc5406462, #999999);
+  font-size: 14px;
+  letter-spacing: 0em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.privacy-policy {
+  flex-shrink: 0;
+  width: auto; /* 93px */
+  height: auto; /* 21px */
+  white-space: pre;
+  overflow: visible;
+  position: relative;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  color: var(--token-ba0f8505-1870-43c0-8d4e-7d4bc5406462, #999999);
+  font-size: 14px;
+  letter-spacing: 0em;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.columns {
+  flex-shrink: 0;
+  width: 80px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+
+<Mail />
+<DispoPing />
