@@ -308,14 +308,16 @@ button,
 .w-form-done {
   display: none;
   padding: 20px;
+  font-family: Open Runde, sans-serif;
   text-align: center;
-  background-color: #dddddd;
+  background-color: #ebebeb
 }
 .w-form-fail {
   display: none;
   margin-top: 10px;
+  font-family: Open Runde, sans-serif;
   padding: 10px;
-  background-color: #ffdede;
+  background-color: #faaeae;
 }
 label {
   display: block;
